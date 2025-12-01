@@ -1,0 +1,76 @@
+/* Navbar container */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 50px;
+  background: #FFFFFF;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.nav-logo a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1B3A4B;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each link */
+.nav-links a {
+  text-decoration: none;
+  color: #2A6F97;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: #1B3A4B;
+}
+
+/* Active link highlight */
+.nav-links .active {
+  color: #1B3A4B;
+  border-bottom: 2px solid #1B3A4B;
+  padding-bottom: 4px;
+}
+/* Logo container */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo Image */
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1B3A4B;
+  font-family: 'Playfair Display', serif;
+}
+

@@ -1,0 +1,31 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #2A6F97;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+.scroll-top-btn:hover {
+  background: #1B3A4B;
+  transform: translateY(-4px);
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .scroll-top-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

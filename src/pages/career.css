@@ -1,0 +1,57 @@
+.career-page {
+  padding: 60px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.career-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #1B3A4B;
+  margin-bottom: 10px;
+}
+
+.career-subtitle {
+  text-align: center;
+  color: #6B7280;
+  margin-bottom: 40px;
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.career-form input,
+.career-form select,
+.career-form textarea {
+  padding: 14px;
+  border: 2px solid #2A6F97;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.career-btn {
+  background: #2A6F97;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.career-btn:hover {
+  background: #1B3A4B;
+}
+
+.career-status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #2A6F97;
+}

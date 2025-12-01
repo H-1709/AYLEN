@@ -1,0 +1,247 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #f0f7ff, #e6eef5, #f0f7ff);
+  background-size: 200% 200%;
+  animation: heroGradient 10s ease infinite;
+  padding: 80px 60px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+  background: linear-gradient(120deg, #F5F7FA, #FFFFFF);
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  line-height: 1.2;
+  color: #1B3A4B;
+}
+
+.hero h1 span {
+  color: #2A6F97;
+}
+
+.hero-subtext {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #6B7280;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: #2A6F97;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1B3A4B;
+}
+
+.btn-outline {
+  background: transparent;
+  padding: 12px 26px;
+  color: #2A6F97;
+  border: 2px solid #2A6F97;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-outline:hover {
+  background: #2A6F97;
+  color: white;
+}
+
+/* Hero Image */
+.hero-right img {
+  width: 420px;
+  filter: drop-shadow(2px 8px 20px rgba(0,0,0,0.2));
+}
+
+/* Why AYLEN Section */
+.why-card {
+  transition: 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  background: #ffffff;
+}
+
+.why {
+  padding: 80px 60px;
+  background: #FFFFFF;
+}
+
+.why h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #1B3A4B;
+}
+
+.why-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.why-card {
+  background: #F5F7FA;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2A6F97;
+}
+
+.why-card p {
+  color: #6B7280;
+}
+
+/* Product Highlights */
+.highlight {
+  padding: 80px 60px;
+  background: #F5F7FA;
+}
+
+.highlight h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #1B3A4B;
+}
+
+.highlight-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.highlight-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  transition: 0.25s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+}
+
+.h-img {
+  height: 150px;
+  background: #E3EDF4;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 80px 40px;
+  background: #2A6F97;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.btn-primary.large {
+  padding: 14px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.tagline {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1B3A4B;
+}
+
+.dynamic-word {
+  color: #2A6F97;
+  font-weight: 700;
+  padding-left: 4px;
+  animation: fadeSlide 0.6s ease-in-out;
+}
+
+.sub-tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6B7280;
+}
+
+.tagline-small {
+  border-left: 3px solid #2A6F97;
+  padding-left: 8px;
+}
+
+/* Animation for changing word */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

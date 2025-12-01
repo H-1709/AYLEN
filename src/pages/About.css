@@ -1,0 +1,55 @@
+.about-page {
+  padding: 60px;
+  background: #FFFFFF;
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1B3A4B;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.about-tagline {
+  font-size: 18px;
+  color: #2A6F97;
+  letter-spacing: 0.5px;
+}
+
+/* MAIN CONTENT */
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+.about-content p {
+  margin-bottom: 24px;
+  animation: fadeIn 0.6s ease;
+}
+
+.about-content strong {
+  color: #1B3A4B;
+  font-weight: 700;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

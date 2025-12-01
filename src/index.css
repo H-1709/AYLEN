@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F7F9FC;
+  color: #1B3A4B;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  padding: 120px 40px;
+  background: linear-gradient(120deg, #F5F7FA, #FFFFFF);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #1B3A4B;
+  max-width: 700px;
+}
+
+.hero p {
+  max-width: 550px;
+  font-size: 18px;
+  margin: 20px 0 30px;
+  color: #6B7280;
+}
