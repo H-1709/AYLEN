@@ -25,7 +25,7 @@ function App() {
       </Routes>
 
       <Footer />
-<ScrollToTop />   {/* <-- Add this here */}
+<ScrollToTop />  
 
     </BrowserRouter>
   );
