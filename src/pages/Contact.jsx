@@ -3,7 +3,7 @@ export default function Contact() {
     <div>
       <h1>About AYLEN Pharmaceuticals</h1>
       <p>
-        AYLEN is a pharmaceutical marketing company providing high-quality medicines
+        AYLEN is a pharmaceutical company providing high-quality medicines
         through trusted manufacturing partners.
       </p>
     </div>
