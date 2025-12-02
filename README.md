@@ -1,16 +1,74 @@
-# React + Vite
+# AYLEN Pharmaceuticals – Corporate Website  
+A fully responsive, modern pharmaceutical company website built using **React + Vite**, designed for product showcasing, distributor listing, doctor-focused marketing, and corporate branding.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created for **AYLEN Pharmaceutical Pvt. Ltd.**, featuring clean UI, smooth animations, and a complete product catalog powered by structured JSON data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 🏠 **Home Page**
+- Premium hero section with animated tagline  
+- Gradient animations and smooth section reveals  
+- “Why Choose AYLEN?” features grid  
+- Product highlight section  
+- Modern CTA section  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 💊 **Products Page**
+- Full dynamic product catalog  
+- Categorized by therapy area:
+  - Lipid Lowering Therapy  
+  - Anti Hypertensive Therapy  
+  - Anti Diabetic Therapy  
+  - CAD Therapy  
+  - Vitamin & Antacids  
+  - NSAIDS & Others  
+- Search by brand name or molecule  
+- Auto-import product images using `import.meta.glob()`  
+- Fully responsive grid layout  
 
-## Expanding the ESLint configuration
+### 🧑‍⚕️ **Distributors Page**
+- Distributor list auto-loaded from structured data  
+- Professional card-based layout  
+- Region, company name, phone & email shown clearly  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📘 **About Page**
+- Company vision  
+- Mission statement  
+- Strengths  
+- Clean corporate layout  
+
+### 👤 **Career Page**
+- Job application form  
+- Email submission using backend API (or EmailJS)  
+- Responsive form layout  
+
+### 📩 **Contact Page**
+- Contact details  
+- Inquiry form  
+- Google Maps integration (optional)  
+
+### 📌 **Global Features**
+- Fully mobile responsive  
+- Modern navbar (desktop + hamburger mobile menu)  
+- Scroll-to-top button  
+- Reusable components  
+- Clean folder structure  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|----------|
+| **React.js (Vite)** | UI framework |
+| **CSS3 / Custom styling** | Layout & design |
+| **Framer Motion** | Smooth animations |
+| **React Router DOM** | Multi-page routing |
+| **EmailJS / API** | Career form submissions |
+| **JavaScript ES6+** | Logic & functionality |
+
+---
+
+## 📁 Project Structure
+
