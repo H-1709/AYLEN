@@ -1,83 +1,71 @@
 import { useState } from "react";
 import "./Distributors.css";
 import { distributors } from "../data/distributors";
-import { FaUser, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaSearch } from "react-icons/fa";
+import indiaMap from "../assets/india-map.png"; // put your map img here
 
-export default function Distributors() {
-  const [search, setSearch] = useState("");
-  const [filterCity, setFilterCity] = useState("All");
+export default function DistributorsPage() {
+  const [openCity, setOpenCity] = useState(null);
 
-  // Get all unique cities for dropdown
-  const cities = ["All", ...new Set(distributors.map(d => d.city))];
+  // Group by city
+  const grouped = distributors.reduce((acc, d) => {
+    if (!acc[d.city]) acc[d.city] = [];
+    acc[d.city].push(d);
+    return acc;
+  }, {});
 
-  // Filter logic
-  const filtered = distributors.filter(d => {
-    const matchesSearch =
-      d.name.toLowerCase().includes(search.toLowerCase()) ||
-      d.city.toLowerCase().includes(search.toLowerCase()) ||
-      d.phone.includes(search);
-
-    const matchesCity = filterCity === "All" || d.city === filterCity;
-
-    return matchesSearch && matchesCity;
-  });
+  const toggleCity = (city) => {
+    setOpenCity(openCity === city ? null : city);
+  };
 
   return (
-    <div className="dist-page">
+    <div className="map-page">
 
-      <h1 className="dist-title">Distribution Network</h1>
-
-      {/* Search + Filter Section */}
-      <div className="dist-controls">
-        <div className="dist-search">
-          <FaSearch className="search-icon" />
-          <input
-            type="text"
-            placeholder="Search distributor, city, or phone..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-          />
-        </div>
-
-        <select
-          className="city-filter"
-          value={filterCity}
-          onChange={e => setFilterCity(e.target.value)}
-        >
-          {cities.map((c, i) => (
-            <option key={i} value={c}>
-              {c}
-            </option>
-          ))}
-        </select>
+      {/* MAP SECTION */}
+      <div className="map-container">
+        <img src={indiaMap} alt="India Map" className="map-img" />
+        <h1 className="map-title">Distribution Network</h1>
       </div>
 
-      {/* Distributor Grid */}
-      <div className="dist-grid">
-        {filtered.map((d, i) => (
-          <div key={i} className="dist-card">
-            <div className="dist-icon"><FaUser /></div>
+      {/* CITY ACCORDION SECTIONS */}
+      <div className="city-sections">
+        {Object.keys(grouped).map((city) => (
+          <div key={city} className="city-block">
 
-            <h3 className="dist-city">
-              <FaMapMarkerAlt className="marker" /> {d.city}
-            </h3>
+            {/* City Header */}
+            <div className="city-header" onClick={() => toggleCity(city)}>
+              <h2>{city}</h2>
+              <span className="arrow">{openCity === city ? "▲" : "▼"}</span>
+            </div>
 
-            <p className="dist-name">{d.name}</p>
+            {/* Slide-down content */}
+            <div
+              className={`city-content ${
+                openCity === city ? "open" : ""
+              }`}
+            >
+              <div className="cards-list">
+                {grouped[city].map((d, i) => (
+                  <div
+                    key={i}
+                    className="dist-card slide-in"
+                  >
+                    <h3>{d.name}</h3>
+                    <p>📍 {d.city}</p>
+                    <p>📞 {d.phone}</p>
+                    <p>✉️ {d.email}</p>
 
-            <a href={`tel:${d.phone.replace(/\s+/g, "")}`} className="dist-phone">
-              <FaPhoneAlt /> {d.phone}
-            </a>
+                    <div className="card-actions">
+                      <a href={`tel:${d.phone}`} className="call-btn">Call</a>
+                      <a href={`mailto:${d.email}`} className="email-btn">Email</a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-            <a href={`mailto:${d.email}`} className="dist-email">
-              <FaEnvelope /> {d.email}
-            </a>
           </div>
         ))}
       </div>
-
-      {filtered.length === 0 && (
-        <p className="dist-no-results">No distributors found.</p>
-      )}
     </div>
   );
 }

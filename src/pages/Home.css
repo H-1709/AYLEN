@@ -1,424 +1,319 @@
-/* ------------------------------
-   GLOBAL THEME COLORS
---------------------------------*/
-:root {
-  --primary: #2b6580;
-  /* pharma blue */
-  --primary-light: #3e7fa0;
-  --text-dark: #1b2e35;
-  --text-light: #555;
-  --bg-light: #f6f9fc;
-  --white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* FIX WHITE SPACE ON RIGHT */
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden !important;
+    font-family: "Inter", sans-serif;
+}
+
+.home {
+    width: 100%;
     overflow-x: hidden;
 }
-.home {
-    overflow-x: hidden;
-}
-
-
-/* ------------------------------
-   PAGE WRAPPER
---------------------------------*/
-.home {
-  width: 100%;
-  background: var(--bg-light);
-  overflow-x: hidden;
-}
 
 
 
-/* =======================================
-   ⚡ HERO SECTION
-==========================================*/
 .hero {
-   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
+    width: 100%;
+    padding: 60px 20px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 
-  border-radius: 18px;
+    background: url("/src/assets/hero-medicine.png") center/cover no-repeat;
+    background-color: #e8f3ff;
 
-  background: url("/src/assets/hero-medicine.png") center/cover no-repeat;
-  background-color: #e9f4ff;
+    border-radius: 0px; /* Remove corner rounding → Prevents overflow */
 }
+
+
+/* LEFT TEXT BLOCK */
 .hero-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-right img {
-  width: 100%;
-  max-width: 450px;
-  object-fit: contain;
-}
-
-/* LEFT CONTENT */
-.hero-left {
-  width: 50%;
+    flex: 1;
+    min-width: 300px;
 }
 
 .hero-left h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  color: var(--text-dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-/* Dynamic Health | Happiness animation */
-.dynamic-word {
-  color: var(--primary);
-  font-weight: 700;
-  animation: fadeWord 0.6s ease-in-out;
-}
-
-@keyframes fadeWord {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    font-size: 2.8rem;
+    line-height: 1.25;
+    color: #1d2f3c;
+    font-weight: 700;
+    margin-bottom: 18px;
 }
 
 .tagline {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-dark);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #345979;
 }
 
-.tagline-small {
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+.dynamic-word {
+    color: #0a75c2;
+    font-weight: 700;
+    border-bottom: 3px solid #0a75c2;
+}
+
+.sub-tagline .tagline-small {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4b6c8a;
 }
 
 .hero-subtext {
-  margin-top: 1rem;
-  color: var(--text-light);
-  max-width: 500px;
-  line-height: 1.6;
+    margin-top: 14px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    color: #425a6b;
+    max-width: 480px;
 }
 
 /* BUTTONS */
 .hero-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
 }
 
+.btn-primary,
+.btn-outline {
+    padding: 12px 26px;
+    border-radius: 50px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
 .btn-primary {
-  background: var(--primary);
-  color: var(--white);
-  padding: 12px 26px;
-  border-radius: 25px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
+    background: #0a75c2;
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 14px rgba(10, 117, 194, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--primary-light);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(43, 101, 128, 0.3);
+    background: #065a96;
+    transform: translateY(-3px);
 }
 
+/* OUTLINE BUTTON */
 .btn-outline {
-  background: transparent;
-  border: 2px solid var(--primary);
-  padding: 12px 26px;
-  border-radius: 25px;
-  color: var(--primary);
-  transition: 0.3s ease;
+    background: #fff;
+    color: #0a75c2;
+    border: 2px solid #0a75c2;
 }
 
 .btn-outline:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-3px);
+    background: #e8f4ff;
+    transform: translateY(-3px);
 }
 
-/* RIGHT IMAGE */
+/* HERO IMAGE (RIGHT SIDE) */
 .hero-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-right img {
-  width: 80%;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  animation: floatHero 4s ease-in-out infinite;
-}
-
-@keyframes floatHero {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+    width: 100%;
+    max-width: 430px;
+    object-fit: contain;
+    animation: float 4s ease-in-out infinite;
 }
 
 
-
-
-/*⭐ BETTER WHY AYLEN SECTION (FIXED) */
-
+/* WHY SECTION */
 .why {
-  padding: 3rem 6%;
-  margin-top: 2rem;
-  text-align: center;
+    padding: 70px 22px;
+    text-align: center;
+    background: #f7fbff;
+  width: 100%;
+
 }
 
 .why h2 {
-  font-size: 2.3rem;
-  color: var(--text-dark);
-  margin-bottom: 2rem;
-  font-weight: 700;
+    font-size: 2.2rem;
+    color: #1d2f3c;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
-/* GRID FIX — More Compact, Centered, Uniform */
+/* GRID CONTAINER */
 .why-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  max-width: 1100px;
-  margin: auto;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
 }
 
-/* CARD FIX — Smaller / Cleaner / Premium */
+/* INDIVIDUAL CARD */
 .why-card {
-  background: white;
-  padding: 1.8rem 1.5rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
-  text-align: left;
+    background: #fff;
+    padding: 28px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
 }
 
 .why-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.1);
 }
 
-/* Heading Fix — Proper pharma typography */
 .why-card h3 {
-  color: var(--primary);
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
+    font-size: 1.2rem;
+    color: #0a3f63;
+    margin-bottom: 10px;
 }
 
-/* Clean compact text */
 .why-card p {
-  color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.45;
-}
-
-/* MOBILE FIX — Perfectly aligned cards */
-@media (max-width: 600px) {
-  .why {
-    padding: 2rem 4%;
-  }
-
-  .why-card {
-    padding: 1.5rem;
-  }
-}
-
-/* CTA SECTION*/
-.cta {
-  padding: 4rem 8%;
-  text-align: center;
-  background: linear-gradient(to right,
-      rgba(43, 101, 128, 0.1),
-      rgba(255, 255, 255, 0.8));
-  border-radius: 40px;
-  margin-top: 4rem;
-}
-
-.cta h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--text-dark);
-}
-
-.cta p {
-  color: var(--text-light);
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
-.cta .btn-primary.large {
-  padding: 14px 40px;
-  font-size: 1.1rem;
+    color: #4f6575;
+    font-size: 0.95rem;
 }
 
 
-
-/* =======================================
-   📱 MOBILE RESPONSIVENESS
-==========================================*/
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 3rem 6%;
-  }
-
-  .hero-left,
-  .hero-right {
-    width: 100%;
-  }
-
-  .hero-left h1 {
-    font-size: 2.4rem;
-  }
-
-  .why-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .why-card {
-    width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-left h1 {
-    font-size: 1.9rem;
-  }
-
-  .btn-primary,
-  .btn-outline {
-    width: 100%;
-  }
-}
-
-/* =======================================
-   ⭐ PRODUCT HIGHLIGHT SECTION
-==========================================*/
-
+/* PRODUCT HIGHLIGHT SECTION (Uncomment if needed)*/
 .highlight {
-  padding: 4rem 8%;
-  margin-top: 2rem;
-  text-align: center;
-  background: linear-gradient(135deg,
-      rgba(43, 101, 128, 0.08),
-      rgba(255, 255, 255, 0.6));
-  border-radius: 30px;
+    padding: 80px 22px;
+    text-align: center;
+    background: #ffffff;
 }
 
 .highlight h2 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: var(--text-dark);
-  font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #123149;
+    margin-bottom: 40px;
 }
 
-/* Row Layout */
 .highlight-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.8rem;
-  max-width: 1100px;
-  margin: auto;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
 }
 
-/* Card Styles */
 .highlight-card {
-  background: white;
-  padding: 1.8rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
-  text-align: center;
+    background: #fff;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
 }
 
 .highlight-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
 }
 
 .h-img {
-  
-  width: 100%;
-  height: 170px;
-  object-fit: contain;   /* keeps image proportions */
-  background-color: #f1f7fa;
-  border-radius: 14px;
-  margin-bottom: 1rem;
-  padding: 10px;         /* gives breathing room */
+     width: 100%;
+  height: 220px;
+  object-fit: contain;      /* keeps full image visible */
+  background: #f6fafd;      /* soft pharma background */
+  border-radius: 16px 16px 0 0;
+  padding: 10px;
+  display: block;
+  margin-bottom: 16px;
 }
 
-/* Name */
-.highlight-card h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 0.3rem;
-}
 
-/* Description */
-.highlight-card p {
-  color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-/* Mobile Fix */
-@media (max-width: 600px) {
-  .highlight {
-    padding: 3rem 5%;
-  }
-
-  .h-img {
-    height: 140px;
-  }
-}
-
-@media(max-width: 768px) {
-  .hero {
-    flex-direction: column;
+/*CTA SECTION */
+.cta {
+    padding: 80px 22px;
     text-align: center;
-    padding: 40px 20px;
-    background-position: top;
-  }
+    background: #eef7ff;
+}
 
-  .hero-buttons {
-    justify-content: center;
-  }
+.cta h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #143047;
+}
 
-  .why-boxes {
-    grid-template-columns: 1fr;
-    gap: 18px;
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 26px;
+    color: #425a6b;
+}
+
+.btn-primary.large {
+    padding: 14px 34px;
+    font-size: 1.05rem;
+}
+
+
+/*ANIMATIONS*/
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 1000px) {
+    .why-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 26px;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .why-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-row {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1300px) {
+  .hero {
+    max-width: 100% !important;
   }
 }

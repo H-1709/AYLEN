@@ -23,6 +23,7 @@ export default function Home() {
         <div className="home">
 
             {/* HERO SECTION */}
+            
             <section className="hero">
                 <div className="hero-left">
                     <h1>
