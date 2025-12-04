@@ -10,6 +10,16 @@
   --bg-light: #f6f9fc;
   --white: #ffffff;
 }
+/* FIX WHITE SPACE ON RIGHT */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.home {
+    overflow-x: hidden;
+}
+
 
 /* ------------------------------
    PAGE WRAPPER
@@ -26,18 +36,36 @@
    ⚡ HERO SECTION
 ==========================================*/
 .hero {
+   width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 8%;
-  gap: 2rem;
-  background: linear-gradient(135deg,
-      rgba(43, 101, 128, 0.1),
-      rgba(255, 255, 255, 0.6)),
-    url("/src/assets/hero-medicine.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 0 40px 40px;
+  gap: 40px;
+
+  border-radius: 18px;
+
+  background: url("/src/assets/hero-medicine.png") center/cover no-repeat;
+  background-color: #e9f4ff;
+}
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 450px;
+  object-fit: contain;
 }
 
 /* LEFT CONTENT */
@@ -374,5 +402,23 @@
 
   .h-img {
     height: 140px;
+  }
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    background-position: top;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .why-boxes {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 }
