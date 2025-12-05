@@ -21,7 +21,7 @@
 
 .product-sidebar {
   position: sticky;
-  top: 80px;   /* adjust based on your navbar height */
+  /* top: 80px;    */
   height: fit-content;
   background: #ffffff;
   padding: 20px;
