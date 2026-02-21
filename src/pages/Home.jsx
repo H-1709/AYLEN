@@ -38,7 +38,7 @@ export default function Home() {
                     </p>
 
                     <p className="hero-subtext">
-                        AYLEN Pharmaceuticals delivers high-quality, trusted medicines
+                        LENTRIX PHARMACEUTICALS delivers high-quality, trusted medicines
                         through world-class manufacturing partners and a strong doctor-first approach.
                     </p>
 
@@ -57,7 +57,7 @@ export default function Home() {
 
             {/* WHY AYLEN SECTION */}
             <section className="why">
-                <h2>Why Choose AYLEN?</h2>
+                <h2>Why Choose LENTRIX?</h2>
 
                 <div className="why-boxes">
                     <div className="why-card">
@@ -112,7 +112,7 @@ export default function Home() {
 
             {/* CTA SECTION */}
             <section className="cta">
-                <h2>Want to Partner With AYLEN?</h2>
+                <h2>Want to Partner With LENTRIX?</h2>
                 <p>Join our growing network of distributors & healthcare providers.</p>
                 <Link to="/contact" className="btn-primary large">
                     Become a Distributor

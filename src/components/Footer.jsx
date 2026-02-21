@@ -11,9 +11,9 @@ export default function Footer() {
 
         {/* LOGO + TAGLINE */}
         <div className="footer-section">
-          <img src={logo} alt="AYLEN Pharma" className="footer-logo" />
+          <img src={logo} alt="LENTRIX Pharma" className="footer-logo" />
           <p className="footer-tagline">
-            AYLEN PHARMACEUTICAL PVT. LTD.
+            LENTRIX PHARMACEUTICAL PVT. LTD.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="footer-section">
           <h3>GET IN TOUCH</h3>
           <p className="footer-address">
-            AYLEN PHARMACEUTICAL PVT. LTD.<br />
+            LENTRIX PHARMACEUTICAL PVT. LTD.<br />
             A-19, First Floor, Bhagyoday - 2,<br />
             Near Pratham Hospital,<br />
             Pawapuri Road, Ghatlodia,<br />
@@ -41,7 +41,7 @@ export default function Footer() {
           </p>
 
           <p className="footer-info"> <FaPhoneAlt></FaPhoneAlt>+91 9909516525</p>
-          <p className="footer-info"><FaMailBulk></FaMailBulk> aylenpharma@gmail.com</p>
+          <p className="footer-info"><FaMailBulk></FaMailBulk> lentrixlifesciences@gmail.com</p>
         </div>
 
         {/* SOCIAL MEDIA */}
@@ -49,11 +49,11 @@ export default function Footer() {
           <h3>SOCIAL MEDIA</h3>
 
           <div className="footer-social">
-            <a href="https://www.facebook.com/aylenpharma#" target="_blank">
+            <a href="https://www.facebook.com/lentrixpharma#" target="_blank">
               <FaFacebook />
             </a>
 
-            <a href="https://www.instagram.com/aylenpharmaceutical/" target="_blank">
+            <a href="https://www.instagram.com/lentrixpharmaceutical/" target="_blank">
               <FaInstagram />
             </a>
 
@@ -67,7 +67,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="footer-bottom">
-        Copyright © {new Date().getFullYear()} AYLEN | All Rights Reserved
+        Copyright © {new Date().getFullYear()} LENTRIX | All Rights Reserved
       </div>
 
     </footer>

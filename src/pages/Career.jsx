@@ -28,7 +28,7 @@ export default function Career() {
     <div className="career-page">
       <h1 className="career-title">Join Our Team</h1>
       <p className="career-subtitle">
-        Build your career with AYLEN and be a part of transforming healthcare.
+        Build your career with LENTRIX and be a part of transforming healthcare.
       </p>
 
       <form className="career-form" onSubmit={sendEmail}>

@@ -17,7 +17,7 @@ export default function About() {
 
         <div className="who-text">
           <p>
-            <strong>AYLEN</strong> is a pharmaceutical company focused on delivering affordable
+            <strong>LENTRIX</strong> is a pharmaceutical company focused on delivering affordable
             healthcare to society. Our products are formulated based on three major
             parameters — <strong>Quality, Innovation,</strong> and <strong>Affordability.</strong>
           </p>
@@ -29,14 +29,14 @@ export default function About() {
           </p>
 
           <p>
-            AYLEN is led by a team of seasoned professionals with deep expertise in
+            LENTRIX is led by a team of seasoned professionals with deep expertise in
             the healthcare domain. Our team works with a unidirectional and
             patient-first approach, constantly striving to enhance lifestyle and
             well-being.
           </p>
 
           <p>
-            At AYLEN, <strong>people remain at the heart of our growth vision.</strong> Our
+            At LENTRIX, <strong>people remain at the heart of our growth vision.</strong> Our
             commitment to healthcare excellence drives every step we take.
           </p>
         </div>
@@ -51,14 +51,14 @@ export default function About() {
           </h2>
 
           <p>
-            At AYLEN, we believe that good health is the foundation of a strong and
+            At LENTRIX, we believe that good health is the foundation of a strong and
             happy life. Our vision and mission revolve around creating high-quality,
             accessible medicines for everyone.
           </p>
         </div>
 
         {/* <div className="split-image">
-          <img src="/src/assets/about-lab.jpg" alt="AYLEN Laboratory" />
+          <img src="/src/assets/about-lab.jpg" alt="LENTRIX Laboratory" />
         </div> */}
       </section>
 
@@ -73,7 +73,7 @@ export default function About() {
           <h3>Our Vision</h3>
           <p>
             To be one of the most admired pharmaceutical companies in India.
-            We aspire to enrich our people — the driving force behind AYLEN —
+            We aspire to enrich our people — the driving force behind LENTRIX —
             empowering them to achieve the highest standards of professional excellence.
           </p>
         </div>
