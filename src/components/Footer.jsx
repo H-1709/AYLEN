@@ -34,7 +34,7 @@ export default function Footer() {
           <h3>GET IN TOUCH</h3>
           <p className="footer-address">
             LENTRIX PHARMACEUTICAL PVT. LTD.<br />
-            31, First Floor, Dev Nandan Shopping Centre,,<br />
+            B - 31, First Floor, Dev Nandan Shopping Centre,,<br />
             Nr. Morarji Desai Overbridge,<br />
             Chanakyapuri<br />
             Ahmedabad, Gujarat 380061
