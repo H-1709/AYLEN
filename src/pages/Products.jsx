@@ -27,11 +27,7 @@ export default function ProductsPage() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const categories = [
-    "all",
-    "lipid-lowering",
-    "anti-hypertensive",
-    "anti-diabetic",
+  const categories = ["all", ...Object.keys(CATEGORY_LABELS).filter((key) => key !== "all")];
     "cad-therapy",
     "vitamin-antacids",
     "nsaids-others",
