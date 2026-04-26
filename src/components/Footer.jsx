@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="footer-section">
             <h3 className="footer-heading">Get in touch</h3>
             <p className="footer-address">
-              LENTRIX LIFESCIENCES PVT. LTD.
+              LENTRIX LIFESCIENCES
               <br />
               FF - 31, Dev Nandan Shopping Centre,
               <br />
