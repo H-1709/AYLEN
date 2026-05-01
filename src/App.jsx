@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import RouteScrollToTop from "./components/RouteScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About us";
@@ -14,6 +15,7 @@ import WhatsAppFloat from "./components/WhatsAppFloat";
 function App() {
   return (
     <BrowserRouter>
+      <RouteScrollToTop />
       <Navbar />
 
       <main className="site-main">
