@@ -71,3 +71,29 @@ This project was created for **AYLEN Pharmaceutical Pvt. Ltd.**, featuring clean
 ## Backend will start at:
  http://localhost:5000
 
+
+---
+
+## 📧 Form Email Setup (No Backend Required)
+
+Both **Career** and **Contact** forms now send submissions using **EmailJS** directly to your email.
+
+1. Create an EmailJS account and connect `lentrixlifesciences@gmail.com` as the receiver.
+2. Create:
+   - one service
+   - one template for contact form
+   - one template for career form
+3. Add a `.env` file in project root:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_CONTACT_TEMPLATE_ID=your_contact_template_id
+VITE_EMAILJS_CAREER_TEMPLATE_ID=your_career_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+4. Restart dev server after adding env vars.
+
+Template variables used:
+- Contact: `name`, `company`, `location`, `phone`, `email`, `message`
+- Career: `name`, `email`, `phone`, `position`, `message`
