@@ -31,7 +31,8 @@ export default function Career() {
         message: "",
       });
     } catch (error) {
-      setStatus("Failed to send. Please try again.");
+      console.error(error);
+      setStatus(error.message || "Failed to send. Please try again.");
     }
   }
 

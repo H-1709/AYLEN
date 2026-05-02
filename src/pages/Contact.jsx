@@ -34,7 +34,8 @@ export default function Contact() {
         message: "",
       });
     } catch (error) {
-      setStatus("Unable to send right now. Please try again later.");
+      console.error(error);
+      setStatus(error.message || "Unable to send right now. Please try again later.");
     }
   }
 

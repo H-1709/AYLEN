@@ -104,3 +104,6 @@ cp .env.example .env
 Template variables used:
 - Contact: `name`, `company`, `location`, `phone`, `email`, `message`
 - Career: `name`, `email`, `phone`, `position`, `message`
+
+### 🌐 Vercel Deployment Note
+If forms fail only on deployed site, add the same `VITE_EMAILJS_*` variables in **Vercel → Project Settings → Environment Variables**, then **Redeploy**. Vite reads env vars at build time, so updating env vars without redeploy will not update the client bundle.
