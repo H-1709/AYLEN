@@ -1,9 +1,9 @@
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID;
-const CAREER_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CAREER_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID?.trim();
+const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID?.trim();
+const CAREER_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CAREER_TEMPLATE_ID?.trim();
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.trim();
 
 function validateEmailJsConfig(templateId) {
   return Boolean(SERVICE_ID && templateId && PUBLIC_KEY);

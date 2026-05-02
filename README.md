@@ -94,6 +94,13 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 
 4. Restart dev server after adding env vars.
 
+You can copy `.env.example` to `.env` and edit if needed:
+
+```bash
+cp .env.example .env
+```
+
+
 Template variables used:
 - Contact: `name`, `company`, `location`, `phone`, `email`, `message`
 - Career: `name`, `email`, `phone`, `position`, `message`
