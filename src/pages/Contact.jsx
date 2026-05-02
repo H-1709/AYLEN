@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { useState } from "react";
+import { sendContactForm } from "../lib/emailService";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -15,9 +16,27 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    alert("Distributor request submitted! (Email API to be added)");
+    setStatus("Sending...");
+
+    try {
+      await sendContactForm(form);
+      setStatus("Distributor request sent successfully! 🎉");
+      setForm({
+        name: "",
+        company: "",
+        location: "",
+        phone: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      setStatus(error.message || "Unable to send right now. Please try again later.");
+    }
   }
 
   return (
@@ -95,6 +114,7 @@ export default function Contact() {
             Submit Request
           </button>
         </form>
+        {status && <p className="career-status">{status}</p>}
       </div>
     </div>
   );

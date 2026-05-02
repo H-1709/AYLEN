@@ -1,28 +1,40 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
+import { sendCareerForm } from "../lib/emailService";
 import "./career.css";
 
 export default function Career() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    position: "",
+    message: "",
+  });
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
+  function handleChange(e) {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault();
     setStatus("Sending...");
 
-    emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      e.target,
-      "YOUR_PUBLIC_KEY"
-    )
-    .then(() => {
+    try {
+      await sendCareerForm(form);
       setStatus("Application Sent Successfully! 🎉");
-      e.target.reset();
-    })
-    .catch(() => {
-      setStatus("Failed to send. Please try again.");
-    });
-  };
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        position: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      setStatus(error.message || "Failed to send. Please try again.");
+    }
+  }
 
   return (
     <div className="career-page">
@@ -31,13 +43,33 @@ export default function Career() {
         Build your career with LENTRIX and be a part of transforming healthcare.
       </p>
 
-      <form className="career-form" onSubmit={sendEmail}>
-        
-        <input name="name" type="text" placeholder="Your Full Name" required />
-        <input name="email" type="email" placeholder="Email Address" required />
-        <input name="phone" type="text" placeholder="Phone Number" required />
+      <form className="career-form" onSubmit={handleSubmit}>
+        <input
+          name="name"
+          type="text"
+          placeholder="Your Full Name"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email Address"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="phone"
+          type="text"
+          placeholder="Phone Number"
+          value={form.phone}
+          onChange={handleChange}
+          required
+        />
 
-        <select name="position" required>
+        <select name="position" value={form.position} onChange={handleChange} required>
           <option value="">Select Position</option>
           <option value="Medical Representative">Medical Representative</option>
           <option value="Marketing Associate">Marketing Associate</option>
@@ -49,6 +81,8 @@ export default function Career() {
           name="message"
           placeholder="Tell us about yourself..."
           rows="4"
+          value={form.message}
+          onChange={handleChange}
         ></textarea>
 
         <button className="career-btn" type="submit">Submit Application</button>
