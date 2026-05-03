@@ -124,13 +124,6 @@ export default function Home() {
     };
   }, []);
 
-  const exportRegions = [
-    { name: "North America", status: "Planned", orbit: "north-america" },
-    { name: "Europe", status: "Compliance Phase", orbit: "europe" },
-    { name: "MEA", status: "Dossier Alignment", orbit: "mea" },
-    { name: "APAC", status: "Planned", orbit: "apac" },
-  ];
-
 
   return (
     <div className="home">
@@ -213,46 +206,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="export-vision section" aria-labelledby="export-vision-heading">
-        <div className="container">
-          <div className="row g-4 g-lg-5 align-items-center">
-            <div className="col-12 col-lg-5" data-reveal>
-              <p className="vision-kicker">Global Roadmap</p>
-              <h2 id="export-vision-heading">Global Strategy &amp; Export Vision</h2>
-              <p className="section-lead">
-                LENTRIX is currently anchored in Gujarat, India, with a quality-first
-                operating model designed around international documentation,
-                traceability, and regulatory expectations.
-              </p>
-              <p className="vision-note">
-                Gujarat-based infrastructure built for global standards.
-              </p>
-            </div>
-
-            <div className="col-12 col-lg-7" data-reveal style={{ "--d": "100ms" }}>
-              <div className="hub-shell">
-                <div className="hub-spokes" aria-hidden="true" />
-                <button type="button" className="vision-node vision-node--hub">
-                  <span>India Operations Hub</span>
-                  <small>(Gujarat)</small>
-                </button>
-
-                {exportRegions.map((region) => (
-                  <button
-                    type="button"
-                    key={region.name}
-                    className={`vision-node vision-node--orbit ${region.orbit}`}
-                  >
-                    <span>{region.name}</span>
-                    <em>{region.status}</em>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       <section className="why section" aria-labelledby="why-heading">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -393,73 +347,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="solutions section" aria-labelledby="highlight-heading">
-        <div className="container">
-          <div className="section-head" data-reveal>
-            <h2 id="highlight-heading">Featured formulations</h2>
-            <p className="section-lead">
-              Representative portfolio highlights—discover the full range on
-              our products page.
-            </p>
-          </div>
-          <div className="solutions-layout">
-            <article className="solution-feature" data-reveal style={{ "--d": "0ms" }}>
-              <div className="solution-copy">
-                <p className="solution-label">Cardiovascular</p>
-                <h3 className="solution-title">AMLEN-5</h3>
-                <p className="solution-desc">Amlodipine 5mg tablets</p>
-                <p className="solution-note">
-                  Developed for consistency, patient adherence, and dependable
-                  supply—supported by disciplined quality practices across the
-                  value chain.
-                </p>
-                <div className="solution-actions">
-                  <Link to="/products" className="btn-primary no-underline">
-                    View full portfolio
-                  </Link>
-                  <Link to="/contact" className="btn-outline no-underline">
-                    Enquire
-                  </Link>
-                </div>
-              </div>
-              <div className="solution-media" aria-hidden="true">
-                <img src={amlenImg} alt="AMLEN-5 packaging" />
-              </div>
-            </article>
-
-            <div className="solution-secondary">
-              <article className="solution-brief" data-reveal style={{ "--d": "90ms" }}>
-                <div className="solution-brief-top">
-                  <p className="solution-label">Respiratory</p>
-                  <h4 className="solution-brief-title">COFLEN</h4>
-                  <p className="solution-desc">Cough relief syrup</p>
-                </div>
-                <div className="solution-brief-media" aria-hidden="true">
-                  <img src={xyzImg} alt="COFLEN packaging" />
-                </div>
-                <Link to="/products" className="solution-brief-link">
-                  Explore portfolio →
-                </Link>
-              </article>
-
-              <article className="solution-brief" data-reveal style={{ "--d": "180ms" }}>
-                <div className="solution-brief-top">
-                  <p className="solution-label">Gastro</p>
-                  <h4 className="solution-brief-title">P-LEN-D</h4>
-                  <p className="solution-desc">Pantoprazole + domperidone</p>
-                </div>
-                <div className="solution-brief-media" aria-hidden="true">
-                  <img src={pantaylenImg} alt="P-LEN-D packaging" />
-                </div>
-                <Link to="/products" className="solution-brief-link">
-                  Explore portfolio →
-                </Link>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+      
       <section className="cta section" aria-labelledby="cta-heading">
         <div className="container">
           <div className="cta-panel" data-reveal>
