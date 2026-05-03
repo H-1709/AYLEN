@@ -19,7 +19,7 @@ export default function About() {
 
         <div className="who-text">
           <p>
-            <strong>LENTRIX</strong> is a pharmaceutical company focused on delivering affordable
+            <strong>LENTRIX</strong> is a company focused on delivering affordable
             healthcare to society. Our products are formulated based on three major
             parameters - <strong>Quality, Innovation,</strong> and <strong>Affordability.</strong>
           </p>

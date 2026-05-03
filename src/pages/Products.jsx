@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { FiDownload, FiFilter, FiMail, FiX } from "react-icons/fi";
 import "./Products.css";
 import { products, CATEGORY_LABELS } from "../data/products";
-import catalogImage from "../assets/LENTRIX.png";
+import catalogImage from "../assets/Aylen_Pharmaceutical_Catalog.pdf";
 
 const imageModules = import.meta.glob("../assets/*.{png,jpg,jpeg}", {
   eager: true,
@@ -82,7 +82,7 @@ export default function ProductsPage() {
             href={catalogImage}
             target="_blank"
             rel="noopener noreferrer"
-            download="Lentrix-Product-List.png"
+            download="Lentrix-Product-List.pdf"
             className="btn-outline"
           >
             <FiDownload /> Download Product List
