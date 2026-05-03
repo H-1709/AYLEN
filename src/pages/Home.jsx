@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import heroMedicine from "../assets/hero-medicine.jpg";
 import background2 from "../assets/Background2.png";
 import background1 from "../assets/background.png";
-// import globalMedicineMap from "../assets/global-medicine-map.svg";
+import globalMedicineMap from "../assets/global-medicine-map.png";
 import CertificationShowcase from "../components/CertificationShowcase";
 import { CERTIFICATIONS } from "../data/certifications";
 import {
@@ -311,7 +311,7 @@ manufacturing affordable medicines for the patients.
           <div className="global-copy" data-reveal>
             <h2 id="global-heading">Global Presence &amp; Export Vision</h2>
             <p className="section-lead">
-              We are building a future-ready distribution footprint—designed for
+              We are building a future-ready distribution footprint - designed for
               compliance, traceability, and consistent product availability as we
               expand to new markets.
             </p>
@@ -338,13 +338,13 @@ manufacturing affordable medicines for the patients.
             </div>
           </div>
 
-          {/* <div className="global-visual" data-reveal>
+          <div className="global-visual" data-reveal>
             <img
               src={globalMedicineMap}
               alt="Illustration of global medicine availability and distribution reach"
               className="global-visual-image"
             />
-          </div> */}
+          </div>
         </div>
       </section>
 
