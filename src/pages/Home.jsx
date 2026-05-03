@@ -128,7 +128,7 @@ export default function Home() {
   return (
     <div className="home">
       <section className="hero" aria-labelledby="hero-heading">
-      <div className="hero-fade" />
+        <div className="hero-fade" />
         <div className="hero-carousel" aria-hidden="true">
           {slides.map((s, i) => (
             <div
@@ -143,9 +143,9 @@ export default function Home() {
 
         <div className="hero-inner container">
           <div className="hero-left">
-            <p className="hero-eyebrow" data-reveal style={{ "--d": "0ms" }}>
+            <h1><p className="hero-eyebrow" data-reveal style={{ "--d": "0ms" }}>
               LENTRIX LIFESCIENCES
-            </p>
+            </p></h1>
 
             <h1 id="hero-heading" data-reveal style={{ "--d": "80ms" }}>
               Driven By Science, Inspired By Life
@@ -153,10 +153,10 @@ export default function Home() {
 
             <p className="hero-subtext" data-reveal style={{ "--d": "140ms" }}>
               LENTRIX LIFESCIENCSE is one of the fastest growing pharmaceutical
-company in India, Our branded generics business in India commands
-strong position in high-growth chronic therapies and strong positioning in
-the acute segment, Over the past decade, we have been developing and
-manufacturing affordable medicines for the patients.
+              company in India, Our branded generics business in India commands
+              strong position in high-growth chronic therapies and strong positioning in
+              the acute segment, Over the past decade, we have been developing and
+              manufacturing affordable medicines for the patients.
             </p>
 
             <div className="hero-buttons" data-reveal style={{ "--d": "220ms" }}>
@@ -203,11 +203,11 @@ manufacturing affordable medicines for the patients.
               </ul>
             </aside>
           </div>
-          
+
         </div>
       </section>
 
-      
+
       <section className="why section" aria-labelledby="why-heading">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -348,7 +348,7 @@ manufacturing affordable medicines for the patients.
         </div>
       </section>
 
-      
+
       <section className="cta section" aria-labelledby="cta-heading">
         <div className="container">
           <div className="cta-panel" data-reveal>
