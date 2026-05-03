@@ -1,0 +1,41 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Global medicine availability illustration</title>
+  <desc id="desc">A simple globe with connection markers and a healthcare cross representing pharmaceutical availability.</desc>
+  <rect width="960" height="640" rx="36" fill="url(#bg)"/>
+  <circle cx="480" cy="320" r="190" fill="url(#globe)" stroke="#0E7490" stroke-width="10"/>
+  <ellipse cx="480" cy="320" rx="190" ry="72" stroke="#67E8F9" stroke-width="6" opacity="0.8"/>
+  <ellipse cx="480" cy="320" rx="96" ry="190" stroke="#67E8F9" stroke-width="6" opacity="0.8"/>
+  <path d="M290 260C350 210 420 180 480 180C540 180 610 210 670 260" stroke="#A5F3FC" stroke-width="6" stroke-linecap="round"/>
+  <path d="M300 390C360 430 420 454 480 454C540 454 600 430 660 390" stroke="#A5F3FC" stroke-width="6" stroke-linecap="round"/>
+
+  <circle cx="332" cy="267" r="15" fill="#0369A1"/>
+  <circle cx="620" cy="240" r="15" fill="#0369A1"/>
+  <circle cx="655" cy="370" r="15" fill="#0369A1"/>
+  <circle cx="360" cy="410" r="15" fill="#0369A1"/>
+
+  <path d="M332 267L438 286" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M620 240L522 281" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M655 370L531 351" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M360 410L441 359" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="8 8"/>
+
+  <rect x="410" y="250" width="140" height="140" rx="28" fill="#0F2744"/>
+  <rect x="467" y="278" width="26" height="84" rx="8" fill="#F8FAFC"/>
+  <rect x="438" y="307" width="84" height="26" rx="8" fill="#F8FAFC"/>
+
+  <rect x="72" y="84" width="258" height="66" rx="33" fill="#FFFFFF" stroke="#93C5FD"/>
+  <text x="102" y="126" fill="#0F2744" font-family="Arial, sans-serif" font-size="30" font-weight="700">Global Availability</text>
+
+  <rect x="620" y="500" width="268" height="66" rx="33" fill="#FFFFFF" stroke="#93C5FD"/>
+  <text x="650" y="542" fill="#0F2744" font-family="Arial, sans-serif" font-size="28" font-weight="700">Medicine Access</text>
+
+  <defs>
+    <linearGradient id="bg" x1="82" y1="46" x2="886" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FCFF"/>
+      <stop offset="1" stop-color="#EAF4FF"/>
+    </linearGradient>
+    <linearGradient id="globe" x1="320" y1="130" x2="640" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFFAFE"/>
+      <stop offset="1" stop-color="#BFDBFE"/>
+    </linearGradient>
+  </defs>
+</svg>

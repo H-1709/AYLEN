@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import heroMedicine from "../assets/hero-medicine.png";
 import background2 from "../assets/Background2.png";
 import background1 from "../assets/background.png";
+import globalMedicineMap from "../assets/global-medicine-map.svg";
 import CertificationShowcase from "../components/CertificationShowcase";
 import { CERTIFICATIONS } from "../data/certifications";
 import {
@@ -382,37 +383,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="global-visual" aria-hidden="true" data-reveal>
-            <div className="network-orbit">
-              <div className="orbit-ring ring-1" />
-              <div className="orbit-ring ring-2" />
-              <div className="orbit-ring ring-3" />
-
-              <div className="hub-core">
-                <p>India Hub</p>
-                <span>Domestic base • global distributor onboarding plan</span>
-              </div>
-
-              <div className="node node-na">
-                <strong>North America</strong>
-                <span>Planned phase: identify compliant distributor partners</span>
-              </div>
-              <div className="node node-eu">
-                <strong>Europe</strong>
-                <span>Planned phase: product dossier and partner alignment</span>
-              </div>
-              <div className="node node-mea">
-                <strong>MEA</strong>
-                <span>Planned phase: regional distributor discovery</span>
-              </div>
-              <div className="node node-apac">
-                <strong>APAC</strong>
-                <span>Planned phase: market mapping and onboarding pipeline</span>
-              </div>
-
-              <div className="network-note note-1">Now: India operations</div>
-              <div className="network-note note-2">Next: Open to global distributors</div>
-            </div>
+          <div className="global-visual" data-reveal>
+            <img
+              src={globalMedicineMap}
+              alt="Illustration of global medicine availability and distribution reach"
+              className="global-visual-image"
+            />
           </div>
         </div>
       </section>

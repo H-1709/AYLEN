@@ -479,6 +479,14 @@
   place-items: center;
 }
 
+
+.global-visual-image {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 .network-orbit {
   width: min(92%, 900px);
   height: min(80vw, 390px);
