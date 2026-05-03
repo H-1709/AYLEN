@@ -121,7 +121,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-subtext" data-reveal style={{ "--d": "140ms" }}>
-              LENTRIX PHARMACEUTICAL develops and markets quality-focused
+              LENTRIX LIFESCIENCES develops and markets quality-focused
               formulations through world-class manufacturing partners—serving
               prescribers, distributors, and patients with consistency and
               integrity.
@@ -148,7 +148,7 @@ export default function Home() {
               <div className="identity-top">
                 <p className="identity-title">LENTRIX LIFESCIENCES</p>
                 <p className="identity-sub">
-                  A quality-led pharmaceutical company focused on dependable
+                  A quality-led company focused on dependable
                   formulations and disciplined execution across markets.
                 </p>
               </div>
