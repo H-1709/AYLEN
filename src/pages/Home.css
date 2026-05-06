@@ -413,7 +413,7 @@
   z-index: -1;
 }
 
-/* ——— GLOBAL PRESENCE ——— */
+——— GLOBAL PRESENCE ———
 .global {
   position: relative;
 }
@@ -466,14 +466,14 @@
 
 .global-visual {
   position: relative;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(15, 39, 68, 0.14);
-  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.14);
-  background:
+  /* box-shadow: 0 18px 36px rgba(15, 23, 42, 0.14); */
+  /* background:
     radial-gradient(460px 280px at 25% 20%, rgba(56, 189, 248, 0.18), transparent 70%),
     radial-gradient(480px 280px at 80% 80%, rgba(3, 105, 161, 0.14), transparent 72%),
-    linear-gradient(160deg, #f8fcff 0%, #eff6ff 100%);
+    linear-gradient(160deg, #f8fcff 0%, #eff6ff 100%); */
   min-height: 430px;
   display: grid;
   place-items: center;
@@ -485,66 +485,9 @@
   max-width: 760px;
   height: auto;
   display: block;
-  object-fit: contain;
-}
-.network-orbit {
-  width: min(92%, 900px);
-  height: min(80vw, 390px);
-  max-height: 390px;
-  position: relative;
+  object-fit:cover;
 }
 
-.orbit-ring {
-  position: absolute;
-  inset: 12% 24%;
-  border: 1px dashed rgba(14, 116, 144, 0.28);
-  border-radius: 999px;
-  animation: spin 24s linear infinite;
-}
-
-.orbit-ring.ring-2 {
-  inset: 22% 13%;
-  animation-direction: reverse;
-  animation-duration: 30s;
-}
-
-.orbit-ring.ring-3 {
-  inset: 6% 35%;
-  animation-duration: 18s;
-}
-
-.hub-core,
-.node {
-  position: absolute;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(14, 116, 144, 0.17);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.10);
-  padding: 0.75rem 0.85rem;
-}
-
-.hub-core {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 190px;
-  text-align: center;
-  background: linear-gradient(155deg, rgba(15, 39, 68, 0.96), rgba(3, 105, 161, 0.92));
-  color: #f8fafc;
-  border-color: rgba(224, 242, 254, 0.4);
-}
-
-.hub-core p { font-weight: 800; font-size: 1rem; }
-.hub-core span { font-size: 0.78rem; opacity: 0.9; }
-
-.node { max-width: 170px; }
-.node strong { display: block; font-size: 0.83rem; color: var(--color-navy-900); }
-.node span { font-size: 0.72rem; color: var(--color-text-muted); line-height: 1.35; }
-
-.node-na { left: 4%; top: 22%; }
-.node-eu { left: 35%; top: 4%; }
-.node-mea { right: 9%; top: 30%; }
-.node-apac { right: 16%; bottom: 8%; }
 
 .network-note {
   position: absolute;
